@@ -40,13 +40,20 @@ You can subscribe to this calendar to stay updated with the latest anime schedul
 5. Click "Subscribe"
 
 ### Microsoft Outlook (Enhanced Compatibility)
+For online subscription:
 1. Go to Calendar view
 2. Click "Add calendar" > "Subscribe from web"
 3. Enter the raw URL: `https://raw.githubusercontent.com/DinuthDamsara45/my-anime-schedule/main/main.ics`
 4. Name the calendar and choose color/display options
 5. Click "Import"
 
+For optimal image support in Outlook:
+1. Clone or download this repository
+2. Run the Outlook-specific update script: `./update_for_outlook.sh`
+3. Import the generated `main_outlook.ics` file into Outlook
+
 This calendar uses RFC 7986 compliant formatting with specific enhancements for Outlook, ensuring:
+- **Episode thumbnails and anime posters** displayed directly in events
 - Proper event categorization with anime-specific tags
 - Accurate time display with UTC time zone support
 - Full metadata support including episode links
@@ -54,6 +61,8 @@ This calendar uses RFC 7986 compliant formatting with specific enhancements for 
 - Support for Outlook-specific fields and notifications
 - 15-minute reminder notifications before each episode
 - Custom calendar icon when supported
+
+> **Image Support:** Microsoft Outlook supports the RFC 7986 IMAGE property, allowing this calendar to display episode thumbnails and anime posters directly in your calendar events. Images are sourced from The Movie Database (TMDB).
 
 ### Other Calendar Apps
 Most calendar applications support ICS subscription via URL. Look for options like:
@@ -81,6 +90,8 @@ Please create your own fork if you want to make a similar calendar for yourself.
 - ✅ **Multi-platform** - Works with Google Calendar, Apple Calendar, Outlook, and more
 - ✅ **Extended properties** - Rich metadata including categories, priorities, and transparency
 - ✅ **Calendar branding** - Custom calendar icon when supported by applications
+- ✅ **Anime artwork** - Episode thumbnails and series posters from TMDB
+- ✅ **Visual events** - Image support in compatible clients like Outlook
 
 ## Current Anime Series
 
@@ -107,6 +118,18 @@ If you encounter any issues with the calendar subscription or have suggestions:
 ## Contact
 
 If you have any questions or suggestions regarding this calendar, please open an issue or contact the repository owner.
+
+## Security Considerations
+
+This project uses The Movie Database (TMDB) API to fetch anime images. To maintain security:
+
+1. **Never commit API keys or tokens** to the public repository
+2. For personal use or development:
+   - Create a `.env` file based on `.env.example`
+   - Add your TMDB credentials to this file (which is ignored by git)
+   - Or use environment variables as described in MAINTENANCE.md
+
+For more details on securely managing API credentials, see the [MAINTENANCE.md](MAINTENANCE.md) file.
 
 ## License
 
