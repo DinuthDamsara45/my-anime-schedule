@@ -11,7 +11,7 @@ UID:anime-schedule-001@dinuth.example.com
 LAST-MODIFIED:20250519T140000Z
 CREATED:20250519T130000Z
 REFRESH-INTERVAL;VALUE=DURATION:P1D
-IMAGE;VALUE=URI;DISPLAY=BADGE;FMTTYPE=image/png:https://github.com/DinuthDamsara45/my-anime-schedule/raw/main/docs/calendar-icon.png
+IMAGE;VALUE=URI;DISPLAY=BADGE;FMTTYPE=image/svg+xml:https://github.com/DinuthDamsara45/my-anime-schedule/raw/main/docs/calendar-icon.svg
 COLOR:#31a59f
 CATEGORIES:Entertainment,Anime,Schedule
 TIMEZONE-ID:UTC
@@ -20,6 +20,18 @@ X-WR-TIMEZONE:UTC
 X-WR-CALDESC:My personal anime viewing schedule
 X-PUBLISHED-TTL:P1D
 CLASS:PUBLIC
+
+BEGIN:VTIMEZONE
+TZID:UTC
+TZURL:http://tzurl.org/zoneinfo/Etc/UTC
+X-LIC-LOCATION:Etc/UTC
+BEGIN:STANDARD
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+TZNAME:UTC
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
 
 BEGIN:VEVENT
 UID:20250519T131500Z-003@dinuth.example.com
@@ -38,6 +50,11 @@ PRIORITY:5
 CATEGORIES:Anime,Streaming,Entertainment
 URL:https://www.crunchyroll.com/series/the-apothecary-diaries
 ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: The Apothecary Diaries S2 - Episode 31 airs soon!
+TRIGGER:-PT15M
+END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
@@ -152,6 +169,11 @@ PRIORITY:5
 CATEGORIES:Anime,Streaming,Entertainment
 URL:https://www.crunchyroll.com/series/shiunji-family-children
 ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: The Shiunji Family Children - Episode 7 airs soon!
+TRIGGER:-PT15M
+END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT

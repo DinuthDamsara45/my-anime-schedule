@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="60" height="60" x="2" y="2" rx="5" ry="5" fill="#31a59f" />
+  <rect width="50" height="40" x="7" y="17" rx="2" ry="2" fill="#ffffff" />
+  <rect width="10" height="10" x="12" y="22" rx="1" ry="1" fill="#ff9e80" />
+  <rect width="10" height="10" x="27" y="22" rx="1" ry="1" fill="#ff9e80" />
+  <rect width="10" height="10" x="42" y="22" rx="1" ry="1" fill="#ff9e80" />
+  <rect width="10" height="10" x="12" y="37" rx="1" ry="1" fill="#ff9e80" />
+  <rect width="10" height="10" x="27" y="37" rx="1" ry="1" fill="#ff9e80" />
+  <rect width="10" height="10" x="42" y="37" rx="1" ry="1" fill="#ff9e80" />
+  <rect width="8" height="8" x="13" y="6" rx="4" ry="4" fill="#ffffff" />
+  <rect width="8" height="8" x="43" y="6" rx="4" ry="4" fill="#ffffff" />
+  <text x="32" y="13" font-family="Arial" font-size="10" text-anchor="middle" fill="#ffffff">ANIME</text>
+</svg>

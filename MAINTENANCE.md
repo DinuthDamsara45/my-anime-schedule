@@ -30,6 +30,11 @@ When adding a new anime series to the calendar:
    CATEGORIES:Anime,Streaming,Entertainment
    URL:[OFFICIAL_ANIME_URL]
    ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
+   BEGIN:VALARM
+   ACTION:DISPLAY
+   DESCRIPTION:Reminder: [ANIME_TITLE] Episode [NUMBER] airs soon!
+   TRIGGER:-PT15M
+   END:VALARM
    END:VEVENT
    ```
 

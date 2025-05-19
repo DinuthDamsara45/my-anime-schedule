@@ -100,12 +100,18 @@ def validate_ics_file(file_path):
 
 if __name__ == "__main__":
     import argparse
+    import os
+    
+    # Determine the path to main.ics relative to this script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    default_ics_path = os.path.join(os.path.dirname(script_dir), 'main.ics')
     
     parser = argparse.ArgumentParser(description='Validate an ICS calendar file.')
-    parser.add_argument('--file', '-f', default='../main.ics', 
-                        help='Path to the ICS file (default: ../main.ics)')
+    parser.add_argument('--file', '-f', default=default_ics_path, 
+                        help=f'Path to the ICS file (default: {default_ics_path})')
     
     args = parser.parse_args()
     
+    print(f"Validating calendar file: {args.file}")
     success = validate_ics_file(args.file)
     sys.exit(0 if success else 1)

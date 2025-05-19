@@ -47,11 +47,13 @@ You can subscribe to this calendar to stay updated with the latest anime schedul
 5. Click "Import"
 
 This calendar uses RFC 7986 compliant formatting with specific enhancements for Outlook, ensuring:
-- Proper event categorization
-- Accurate time display
-- Full metadata support
-- Optimized event display
-- Support for Outlook-specific fields
+- Proper event categorization with anime-specific tags
+- Accurate time display with UTC time zone support
+- Full metadata support including episode links
+- Optimized event display with priorities and transparency
+- Support for Outlook-specific fields and notifications
+- 15-minute reminder notifications before each episode
+- Custom calendar icon when supported
 
 ### Other Calendar Apps
 Most calendar applications support ICS subscription via URL. Look for options like:
@@ -75,9 +77,10 @@ Please create your own fork if you want to make a similar calendar for yourself.
 - ✅ **Auto-updating calendar** - Subscribe once and receive all future updates
 - ✅ **Multiple anime series** - Keep track of different shows in one place
 - ✅ **Episode details** - View episode numbers and descriptions
-- ✅ **Reminder support** - Set notifications before episodes air
+- ✅ **Notification alerts** - Built-in 15-minute reminders before episodes air
 - ✅ **Multi-platform** - Works with Google Calendar, Apple Calendar, Outlook, and more
 - ✅ **Extended properties** - Rich metadata including categories, priorities, and transparency
+- ✅ **Calendar branding** - Custom calendar icon when supported by applications
 
 ## Current Anime Series
 
