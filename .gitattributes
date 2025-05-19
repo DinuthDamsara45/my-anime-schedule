@@ -1,0 +1,3 @@
+# Protect calendar files from automatic merges
+main.ics merge=ours
+*.ics merge=ours

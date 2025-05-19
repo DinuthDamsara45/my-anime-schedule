@@ -8,25 +8,135 @@ X-WR-TIMEZONE:UTC
 X-WR-CALDESC:My personal anime viewing schedule
 
 BEGIN:VEVENT
-UID:20250519T130906Z-001@dinuth.example.com
-DTSTAMP:20250519T130906Z
-DTSTART:20250520T180000Z
-DTEND:20250520T190000Z
-SUMMARY:Example Anime Episode
-DESCRIPTION:Watch the latest episode of my favorite anime
-LOCATION:Streaming Service
-STATUS:CONFIRMED
+UID:20250519T131500Z-003@dinuth.example.com
+DTSTAMP:20250519T131500Z
+DTSTART:20250524T130000Z
+DTEND:20250524T133000Z
+SUMMARY:The Apothecary Diaries S2 - Episode 31
+DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 31.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20250519T130906Z-002@dinuth.example.com
-DTSTAMP:20250519T130906Z
-DTSTART:20250527T180000Z
-DTEND:20250527T190000Z
-SUMMARY:Example Anime Episode
-DESCRIPTION:Weekly anime viewing
-LOCATION:Streaming Service
-STATUS:CONFIRMED
+UID:20250519T131500Z-004@dinuth.example.com
+DTSTAMP:20250519T131500Z
+DTSTART:20250531T130000Z
+DTEND:20250531T133000Z
+SUMMARY:The Apothecary Diaries S2 - Episode 32
+DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 32.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T131500Z-005@dinuth.example.com
+DTSTAMP:20250519T131500Z
+DTSTART:20250607T130000Z
+DTEND:20250607T133000Z
+SUMMARY:The Apothecary Diaries S2 - Episode 33
+DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 33.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T131500Z-006@dinuth.example.com
+DTSTAMP:20250519T131500Z
+DTSTART:20250614T130000Z
+DTEND:20250614T133000Z
+SUMMARY:The Apothecary Diaries S2 - Episode 34
+DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 34.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T131500Z-007@dinuth.example.com
+DTSTAMP:20250519T131500Z
+DTSTART:20250621T130000Z
+DTEND:20250621T133000Z
+SUMMARY:The Apothecary Diaries S2 - Episode 35
+DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 35.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T131500Z-008@dinuth.example.com
+DTSTAMP:20250519T131500Z
+DTSTART:20250628T130000Z
+DTEND:20250628T133000Z
+SUMMARY:The Apothecary Diaries S2 - Episode 36
+DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 36.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T140000Z-009@dinuth.example.com
+DTSTAMP:20250519T140000Z
+DTSTART:20250520T143000Z
+DTEND:20250520T150000Z
+SUMMARY:The Shiunji Family Children - Episode 7
+DESCRIPTION:The Shiunji Family Children continues with Episode 7. Follow the story of the five siblings.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T140000Z-010@dinuth.example.com
+DTSTAMP:20250519T140000Z
+DTSTART:20250527T143000Z
+DTEND:20250527T150000Z
+SUMMARY:The Shiunji Family Children - Episode 8
+DESCRIPTION:The Shiunji Family Children continues with Episode 8. Follow the story of the five siblings.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T140000Z-011@dinuth.example.com
+DTSTAMP:20250519T140000Z
+DTSTART:20250603T143000Z
+DTEND:20250603T150000Z
+SUMMARY:The Shiunji Family Children - Episode 9
+DESCRIPTION:The Shiunji Family Children continues with Episode 9. Follow the story of the five siblings.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T140000Z-012@dinuth.example.com
+DTSTAMP:20250519T140000Z
+DTSTART:20250610T143000Z
+DTEND:20250610T150000Z
+SUMMARY:The Shiunji Family Children - Episode 10
+DESCRIPTION:The Shiunji Family Children continues with Episode 10. Follow the story of the five siblings.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T140000Z-013@dinuth.example.com
+DTSTAMP:20250519T140000Z
+DTSTART:20250617T143000Z
+DTEND:20250617T150000Z
+SUMMARY:The Shiunji Family Children - Episode 11
+DESCRIPTION:The Shiunji Family Children continues with Episode 11. Follow the story of the five siblings.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250519T140000Z-014@dinuth.example.com
+DTSTAMP:20250519T140000Z
+DTSTART:20250624T143000Z
+DTEND:20250624T150000Z
+SUMMARY:The Shiunji Family Children - Episode 12
+DESCRIPTION:The Shiunji Family Children continues with Episode 12 (Season Finale). Follow the story of the five siblings.
+LOCATION:Crunchyroll/Streaming Services
+STATUS:TENTATIVE
 END:VEVENT
 
 END:VCALENDAR
