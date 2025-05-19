@@ -6,6 +6,14 @@ METHOD:PUBLISH
 X-WR-CALNAME:My Anime Schedule
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:My personal anime viewing schedule
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+COLOR:49,165,159
+NAME:Anime Viewing Schedule
+DESCRIPTION:Scheduled viewing times for anime series including The Apothecary Diaries and The Shiunji Family Children
+URL:https://github.com/DinuthDamsara45/my-anime-schedule
+X-WR-RELCALID:anime-schedule-001
+CLASS:PUBLIC
 
 BEGIN:VEVENT
 UID:20250519T131500Z-003@dinuth.example.com
