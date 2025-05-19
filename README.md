@@ -2,10 +2,11 @@
 
 ![Calendar Banner](https://img.shields.io/badge/Calendar-Subscribable-brightgreen)
 ![Update Frequency](https://img.shields.io/badge/Updates-Weekly-blue)
-![Format](https://img.shields.io/badge/Format-ICS-orange)
+![Format](https://img.shields.io/badge/Format-RFC7986-orange)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+![Compatibility](https://img.shields.io/badge/Compatibility-Outlook%20|%20Google%20|%20Apple-blue)
 
-A professional anime viewing schedule in iCalendar (.ics) format that can be subscribed to and imported into your favorite calendar applications. Never miss an episode of your favorite anime series!
+A professional anime viewing schedule in iCalendar (.ics) format that fully complies with the modern RFC 7986 standard. This calendar can be subscribed to and imported into your favorite calendar applications including Microsoft Outlook, Google Calendar, and Apple Calendar. Never miss an episode of your favorite anime series!
 
 ## 🚨 Important Notice
 
@@ -38,12 +39,19 @@ You can subscribe to this calendar to stay updated with the latest anime schedul
 4. Configure refresh interval and alerts as desired
 5. Click "Subscribe"
 
-### Microsoft Outlook
+### Microsoft Outlook (Enhanced Compatibility)
 1. Go to Calendar view
 2. Click "Add calendar" > "Subscribe from web"
 3. Enter the raw URL: `https://raw.githubusercontent.com/DinuthDamsara45/my-anime-schedule/main/main.ics`
 4. Name the calendar and choose color/display options
 5. Click "Import"
+
+This calendar uses RFC 7986 compliant formatting with specific enhancements for Outlook, ensuring:
+- Proper event categorization
+- Accurate time display
+- Full metadata support
+- Optimized event display
+- Support for Outlook-specific fields
 
 ### Other Calendar Apps
 Most calendar applications support ICS subscription via URL. Look for options like:
@@ -62,11 +70,14 @@ Please create your own fork if you want to make a similar calendar for yourself.
 
 ## Features
 
+- ✅ **RFC 7986 Compliant** - Uses modern iCalendar standard for maximum compatibility
+- ✅ **Outlook Enhanced** - Special formatting for optimal Microsoft Outlook experience
 - ✅ **Auto-updating calendar** - Subscribe once and receive all future updates
 - ✅ **Multiple anime series** - Keep track of different shows in one place
 - ✅ **Episode details** - View episode numbers and descriptions
 - ✅ **Reminder support** - Set notifications before episodes air
 - ✅ **Multi-platform** - Works with Google Calendar, Apple Calendar, Outlook, and more
+- ✅ **Extended properties** - Rich metadata including categories, priorities, and transparency
 
 ## Current Anime Series
 

@@ -10,7 +10,7 @@ import os.path
 from datetime import datetime
 
 def validate_ics_file(file_path):
-    """Validate an ICS file for common issues."""
+    """Validate an ICS file for common issues and RFC 7986 compliance."""
     if not os.path.exists(file_path):
         print(f"Error: File '{file_path}' does not exist.")
         return False
@@ -23,11 +23,22 @@ def validate_ics_file(file_path):
         print("Error: File does not have proper VCALENDAR begin/end structure.")
         return False
     
-    # Check for required properties
+    # Check for required properties (RFC 5545)
     required_props = ["VERSION", "PRODID", "CALSCALE", "METHOD"]
     for prop in required_props:
         if f"{prop}:" not in content:
             print(f"Warning: Missing recommended property '{prop}'.")
+            
+    # Check for RFC 7986 properties
+    rfc7986_props = ["NAME", "DESCRIPTION", "LAST-MODIFIED", "URL", "REFRESH-INTERVAL", "SOURCE", "COLOR"]
+    missing_modern_props = []
+    for prop in rfc7986_props:
+        if f"{prop}:" not in content and f"{prop};" not in content:
+            missing_modern_props.append(prop)
+    
+    if missing_modern_props:
+        print(f"Warning: Missing RFC 7986 properties: {', '.join(missing_modern_props)}")
+        print("These properties improve compatibility with modern calendar clients like Outlook.")
     
     # Check for events
     event_pattern = r"BEGIN:VEVENT(.*?)END:VEVENT"
@@ -44,17 +55,28 @@ def validate_ics_file(file_path):
     for i, event in enumerate(events):
         print(f"Checking event {i+1}...")
         
-        # Check for required event properties
+        # Check for required event properties (RFC 5545)
         for prop in ["UID", "DTSTAMP", "DTSTART"]:
             if f"{prop}:" not in event:
                 print(f"Error: Event {i+1} is missing required property '{prop}'.")
                 errors += 1
         
-        # Check for recommended properties
+        # Check for recommended properties (RFC 5545)
         for prop in ["SUMMARY", "DESCRIPTION"]:
             if f"{prop}:" not in event:
                 print(f"Warning: Event {i+1} is missing recommended property '{prop}'.")
                 warnings += 1
+                
+        # Check for RFC 7986/Outlook enhanced properties
+        enhanced_props = ["CATEGORIES", "CREATED", "LAST-MODIFIED", "SEQUENCE", "TRANSP"]
+        missing_enhanced = []
+        for prop in enhanced_props:
+            if f"{prop}:" not in event and f"{prop};" not in event:
+                missing_enhanced.append(prop)
+                
+        if missing_enhanced:
+            print(f"Warning: Event {i+1} missing enhanced properties: {', '.join(missing_enhanced)}")
+            warnings += 1
         
         # Check date format (simple check)
         date_pattern = r"DT\w+:(\d{8}T\d{6}Z)"

@@ -1,6 +1,6 @@
 # Anime Calendar Maintenance Guide
 
-This document provides instructions for maintaining and updating the anime schedule calendar.
+This document provides instructions for maintaining and updating the anime schedule calendar. This calendar follows the RFC 7986 standard for enhanced compatibility with modern calendar applications, particularly Microsoft Outlook.
 
 ## Adding New Anime Series
 
@@ -22,6 +22,14 @@ When adding a new anime series to the calendar:
    DESCRIPTION:[DESCRIPTION_TEXT]
    LOCATION:[STREAMING_SERVICE]
    STATUS:TENTATIVE
+   CREATED:[TIMESTAMP]
+   LAST-MODIFIED:[TIMESTAMP]
+   SEQUENCE:0
+   TRANSP:OPAQUE
+   PRIORITY:5
+   CATEGORIES:Anime,Streaming,Entertainment
+   URL:[OFFICIAL_ANIME_URL]
+   ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
    END:VEVENT
    ```
 
@@ -48,7 +56,10 @@ At the end of each anime season:
 ## ICS Format References
 
 - [iCalendar Specification (RFC 5545)](https://datatracker.ietf.org/doc/html/rfc5545)
+- [iCalendar Extensions (RFC 7986)](https://datatracker.ietf.org/doc/html/rfc7986) - Modern standard used in this calendar
+- [Microsoft Outlook iCalendar Implementation](https://learn.microsoft.com/en-us/outlook/troubleshoot/calendaring/supporting-calendar-clients)
 - [Common iCalendar Properties](https://www.kanzaki.com/docs/ical/)
+- [Event Publishing Extensions](https://datatracker.ietf.org/doc/html/rfc7986#section-5.1)
 
 ## Validation Tools
 
@@ -66,7 +77,25 @@ Before publishing updates, validate your ICS file with:
 
 ---
 
-**Note**: This calendar uses the following properties:
+**Note**: This calendar uses the following RFC 7986 compliant properties:
+
+**Calendar Properties**:
 - `REFRESH-INTERVAL;VALUE=DURATION:P1D` - Calendar apps should refresh once per day
-- `X-PUBLISHED-TTL:P1D` - Published time-to-live is 1 day
-- `X-WR-RELCALID:anime-schedule-001` - Calendar identifier
+- `NAME` - Standard name property (RFC 7986)
+- `DESCRIPTION` - Standard description property (RFC 7986)
+- `SOURCE;VALUE=URI` - Original source location (RFC 7986)
+- `COLOR` - Color property for calendar apps (RFC 7986)
+- `CATEGORIES` - Calendar categorization (RFC 7986)
+- `IMAGE` - Calendar image for supported clients (RFC 7986)
+
+**Legacy Properties** (for maximum compatibility):
+- `X-PUBLISHED-TTL:P1D` - Legacy time-to-live property
+- `X-WR-CALNAME` - Legacy name property
+- `X-WR-CALDESC` - Legacy description property
+
+**Event Properties**:
+- `TRANSP` - Time transparency (RFC 5545)
+- `PRIORITY` - Event priority (RFC 5545)
+- `SEQUENCE` - Revision sequence number (RFC 5545)
+- `CATEGORIES` - Event categorization (RFC 5545/7986)
+- `ORGANIZER` - Event organizer with CN parameter (RFC 5545)

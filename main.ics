@@ -3,16 +3,22 @@ VERSION:2.0
 PRODID:-//My Anime Times//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+NAME:My Anime Schedule
+DESCRIPTION:Scheduled viewing times for anime series including The Apothecary Diaries and The Shiunji Family Children
+SOURCE;VALUE=URI:https://github.com/DinuthDamsara45/my-anime-schedule/raw/main/main.ics
+URL;VALUE=URI:https://github.com/DinuthDamsara45/my-anime-schedule
+UID:anime-schedule-001@dinuth.example.com
+LAST-MODIFIED:20250519T140000Z
+CREATED:20250519T130000Z
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+IMAGE;VALUE=URI;DISPLAY=BADGE;FMTTYPE=image/png:https://github.com/DinuthDamsara45/my-anime-schedule/raw/main/docs/calendar-icon.png
+COLOR:#31a59f
+CATEGORIES:Entertainment,Anime,Schedule
+TIMEZONE-ID:UTC
 X-WR-CALNAME:My Anime Schedule
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:My personal anime viewing schedule
-REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
-COLOR:49,165,159
-NAME:Anime Viewing Schedule
-DESCRIPTION:Scheduled viewing times for anime series including The Apothecary Diaries and The Shiunji Family Children
-URL:https://github.com/DinuthDamsara45/my-anime-schedule
-X-WR-RELCALID:anime-schedule-001
 CLASS:PUBLIC
 
 BEGIN:VEVENT
@@ -24,6 +30,14 @@ SUMMARY:The Apothecary Diaries S2 - Episode 31
 DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 31.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T131500Z
+LAST-MODIFIED:20250519T131500Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/the-apothecary-diaries
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -35,6 +49,14 @@ SUMMARY:The Apothecary Diaries S2 - Episode 32
 DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 32.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T131500Z
+LAST-MODIFIED:20250519T131500Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/the-apothecary-diaries
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -46,6 +68,14 @@ SUMMARY:The Apothecary Diaries S2 - Episode 33
 DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 33.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T131500Z
+LAST-MODIFIED:20250519T131500Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/the-apothecary-diaries
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -57,6 +87,14 @@ SUMMARY:The Apothecary Diaries S2 - Episode 34
 DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 34.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T131500Z
+LAST-MODIFIED:20250519T131500Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/the-apothecary-diaries
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -68,6 +106,14 @@ SUMMARY:The Apothecary Diaries S2 - Episode 35
 DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 35.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T131500Z
+LAST-MODIFIED:20250519T131500Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/the-apothecary-diaries
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -79,6 +125,14 @@ SUMMARY:The Apothecary Diaries S2 - Episode 36
 DESCRIPTION:The Apothecary Diaries Season 2 continues with Episode 36.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T131500Z
+LAST-MODIFIED:20250519T131500Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/the-apothecary-diaries
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -90,6 +144,14 @@ SUMMARY:The Shiunji Family Children - Episode 7
 DESCRIPTION:The Shiunji Family Children continues with Episode 7. Follow the story of the five siblings.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T140000Z
+LAST-MODIFIED:20250519T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/shiunji-family-children
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -101,6 +163,14 @@ SUMMARY:The Shiunji Family Children - Episode 8
 DESCRIPTION:The Shiunji Family Children continues with Episode 8. Follow the story of the five siblings.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T140000Z
+LAST-MODIFIED:20250519T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/shiunji-family-children
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -112,6 +182,14 @@ SUMMARY:The Shiunji Family Children - Episode 9
 DESCRIPTION:The Shiunji Family Children continues with Episode 9. Follow the story of the five siblings.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T140000Z
+LAST-MODIFIED:20250519T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/shiunji-family-children
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -123,6 +201,14 @@ SUMMARY:The Shiunji Family Children - Episode 10
 DESCRIPTION:The Shiunji Family Children continues with Episode 10. Follow the story of the five siblings.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T140000Z
+LAST-MODIFIED:20250519T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/shiunji-family-children
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -134,6 +220,14 @@ SUMMARY:The Shiunji Family Children - Episode 11
 DESCRIPTION:The Shiunji Family Children continues with Episode 11. Follow the story of the five siblings.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T140000Z
+LAST-MODIFIED:20250519T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/shiunji-family-children
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 BEGIN:VEVENT
@@ -145,6 +239,14 @@ SUMMARY:The Shiunji Family Children - Episode 12
 DESCRIPTION:The Shiunji Family Children continues with Episode 12 (Season Finale). Follow the story of the five siblings.
 LOCATION:Crunchyroll/Streaming Services
 STATUS:TENTATIVE
+CREATED:20250519T140000Z
+LAST-MODIFIED:20250519T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+PRIORITY:5
+CATEGORIES:Anime,Streaming,Entertainment
+URL:https://www.crunchyroll.com/series/shiunji-family-children
+ORGANIZER;CN=Dinuth:mailto:calendar@dinuth.example.com
 END:VEVENT
 
 END:VCALENDAR
